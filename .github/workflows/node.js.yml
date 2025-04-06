@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+
     runs-on: self-hosted
 
     strategy:
@@ -24,13 +25,13 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
+      working-directory: ./UniversalApi
       run: npm ci
-      working-directory: ./UniversalApi
 
-    - name: Build the project
-      run: npm run build --if-present
+    - name: Build app
       working-directory: ./UniversalApi
+      run: npm run build --if-present
 
     - name: Run tests
-      run: npm test
       working-directory: ./UniversalApi
+      run: npm test
