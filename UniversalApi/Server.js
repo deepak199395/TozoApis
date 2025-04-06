@@ -21,7 +21,7 @@ app.get('/api/get', (req, res) => {
 });
 
 //app.use("/aws/api/v1/auth",require("./MVC/Rounter/AuthRouter"))
-app.use("/aws/api/v1/auth", require("./MVC/Router/AuthRouter"));
+//app.use("/aws/api/v1/auth", require("./MVC/Router/AuthRouter"));
 
 app.listen(port,()=>{ console.log(`server is running on port ${port}`.bgCyan.green)})  
 
