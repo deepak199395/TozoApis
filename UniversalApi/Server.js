@@ -17,7 +17,7 @@ dotenv.config();
 
 connectDb()
 app.get('/api/get', (req, res) => {
-    res.send('hello world');
+    res.send('hello world tozo');
 });
 
 //app.use("/aws/api/v1/auth",require("./MVC/Rounter/AuthRouter"))
