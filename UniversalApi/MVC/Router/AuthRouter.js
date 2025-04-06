@@ -4,6 +4,6 @@ const { createusercontroller } = require("../Controllers/useconyroller");
 const router = express.Router();
 
 
-router.post("/createuser",createusercontroller);
+router.post("/CreateUser",createusercontroller);
 
 module.exports = router;
